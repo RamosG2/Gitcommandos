@@ -23,10 +23,11 @@ git remote -v
 git remote add origin https://github.com/RamosG2/Gitcommandos.git
 //para hacer merge se debe estar en la rama a fusionar
 git merge feature
+//subir los cambios al repo 
 git push origin main
 git push --set-upstream origin feature
 
 //actualizar repo remoto a local
 git fetch origin
 git fetch --all
-git pull origin 
+git pull origin "rama"
