@@ -1,0 +1,32 @@
+git config --list
+git config --global user.name
+git config --global user.mail
+
+git init
+git add .
+git clone https://github.com/RamosG2/Gitcommandos.git
+git log 
+git commit -m "Descripcion"
+//lista de ramas
+git branch 
+git branch miRama 
+//eliminar rama
+git branch -D miRama
+//renombrar rama
+git branch -m miRamacorrecta
+//cambiarse de rama
+git checkout main
+
+//repos remotos
+git remote
+git remote -v
+git remote add origin https://github.com/RamosG2/Gitcommandos.git
+//para hacer merge se debe estar en la rama a fusionar
+git merge feature
+git push origin main
+git push --set-upstream origin feature
+
+//actualizar repo remoto a local
+git fetch origin
+git fetch --all
+git pull origin 
