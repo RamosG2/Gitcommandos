@@ -21,13 +21,27 @@ git checkout main
 git remote
 git remote -v
 git remote add origin https://github.com/RamosG2/Gitcommandos.git
+
+https://github.com/RamosG2/mernweb.git
+
+//ramas remotas
+git branch -a
+
 //para hacer merge se debe estar en la rama a fusionar
 git merge feature
 //subir los cambios al repo 
-git push origin main
+git push origin "main"
 git push --set-upstream origin feature
+git push -u origin "rama"
 
 //actualizar repo remoto a local
 git fetch origin
 git fetch --all
 git pull origin "rama"
+
+git pull origin "rama" --allow-unrelated-histories
+
+git branch -D "hotfix"
+
+git rm -r --cached
+

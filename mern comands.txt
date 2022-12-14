@@ -1,0 +1,31 @@
+//creamos package.json
+npm init -y
+
+//instlar 
+npm install express mongoose cors bcrypt
+npm install nodemon -D
+
+//codificar
+creamos App.js
+
+//ejecutar
+npm run dev
+
+//si no se ejecuta el servidor agregar esa linea a package.json en scripts
+"dev": "nodemon server.js",
+
+//instalar postman
+//postman header 
+key content-type
+value aplication/json
+//body
+raw
+
+{
+    "nombre": "Blade",
+    "correo": "dark@gmail.com,
+    "contrasenia": "123456"
+}
+
+//peticion post 
+
