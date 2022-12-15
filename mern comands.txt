@@ -23,9 +23,13 @@ raw
 
 {
     "nombre": "Blade",
-    "correo": "dark@gmail.com,
+    "correo": "dark@gmail.com",
     "contrasenia": "123456"
 }
 
 //peticion post 
 
+// POST method route
+app.post('/', (req, res) => {
+  res.send('POST request to the homepage')
+})
