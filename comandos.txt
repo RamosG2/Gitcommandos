@@ -21,8 +21,9 @@ git checkout main
 git remote
 git remote -v
 git remote add origin https://github.com/RamosG2/Gitcommandos.git
-
 https://github.com/RamosG2/mernweb.git
+//eliminar repo remoto
+git remote rm referencia
 
 //ramas remotas
 git branch -a
@@ -41,7 +42,15 @@ git pull origin "rama"
 
 git pull origin "rama" --allow-unrelated-histories
 
+//borra una rama 
 git branch -D "hotfix"
-
 git rm -r --cached
 
+Git status -> Mirar si tienes modificaciones tuyas y si existe algún pull o push
+Git fetch -> Por si acaso tus ramas no se han actualizado correctamente, esto NO actualiza los ficheros de las ramas, sólo el estado de esa rama
+Git status -> Para verificar de nuevo modificaciones, pull y pushs
+Git pull -> Ahora sí descargas las actualizaciones
+Git add/commit/... -> Ahora guardas tus modificaciones
+Git status -> Miras que siga sin necesitar un pull, por si las moscas
+Git push -> Subes tus datos
+Git status -> Compruebas que está todo correctamente
